@@ -1,166 +1,213 @@
+/* FONTS: */
 h1, h2, h3, .h1, .h2, .h3{
 
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Lobster', cursive;
 
 }
 
 *{
-    font-family: 'Ubuntu', sans-serif;
+
+    font-family: 'Dancing Script', cursive;
 }
 
-
-/* COLORS */
+/* Variabili colori */
 :root{
-    --violetto: rgb(76, 36, 59);
-    --rosaLampone: rgb(184, 74, 98);
-    --biancoAntico: rgb(240, 231, 216);
-    --corallo: rgb(234, 158, 141);
+    --pink: rgb(255, 201, 214);
+    --salmon: rgb(255, 208, 168);
+    --skyblue: rgb(17, 154, 191); 
+    --lightYellow: rgb(255, 243, 170);
+    --light: rgb(255, 254, 245);
+    --lightBlue: rgb(217, 209, 255);
 }
 
-.text-violetto{
-    color:var(--violetto);
+body{
+    background-color: var(--skyblue);
+
+    overflow-x: hidden;
 }
 
-.bg-violetto{
-    color:var(--violetto);
+.text-pink{
+    color: var(--pink);
 }
 
-.text-rosaLampone{
-    color:var(--rosaLampone);
+.bg-pink{
+    color: var(--pink);
 }
 
-.bg-rosa-Lampone{
-    color:var(--rosaLampone);
+.text-salmon{
+    color:var(--salmon);
 }
 
-.text-biancoAntico{
-    color:var(--biancoAntico);
+.bg-salmon{
+    color:var(--salmon);
 }
 
-.bg-biancoAntico{
-    color:var(--biancoAntico);
+.text-skyblue{
+    color:var(--skyblue);
 }
 
-.text-corallo{
-    color: var(--corallo);
+.bg-skyblue{
+    color:var(--skyblue);
 }
 
-/* NAVBAR */
-.navbar{
-    background-color:var(--rosaLampone);
-    
+.text-lightYellow{
+    color:var(--lightYellow);
 }
 
-.books{
-    height: 50px;
-    width: 50px;
-    padding: 5px;
+.bg-lightYellow{
+    color:var(--lightYellow);
 }
 
-.title{
-    font-size: 50px;
+.text-light{
+    color:var(--light);
 }
 
-.title:hover{
-    color: var(--violetto);
+.text-lightBlue{
+    color:var(--lightBlue);
 }
 
-.nav-link:hover{
-    color:var(--violetto);
-}
-
-.btn-cerca{
-    border-color: var(--biancoAntico);
-}
-
-.btn-cerca:hover{
-    background-color: var(--violetto);
-    border-color: var(--violetto);
-    color: var(--rosaLampone);
+.bg{
+    color: var(--lightBlue);
 }
 
 /* HEADER */
 .header{
 
-    background-image: linear-gradient(rgba(184, 74, 98, 0.77), rgba(234, 158, 141, 0.77)), url(./media/libreria-background.jpg);
-    background-size: contain;
+    background: linear-gradient(rgba(217, 209, 255,0.77), rgba(17, 153, 191, 0.547)), url(./media/header.png.png);
+    background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-
+    background-color: var(--skyblue);
 }
 
-/* .titolo-custom{
-    color: var(--corallo);
-    margin-top: 50px;
-    
-} */
-.citazione{
-    margin-top: 200px;
+/* NAVBAR */
+#mainNav{
+    background-color: #119abf;
+}
+.nav-link{
+
+    color: var(--pink);
+    border-bottom: 2px solid var(--pink);
+    margin: 0px 10px;
+    padding: 0px;
+  
 }
 
-.immagini_libri{
-    margin-top: 200px;
-    height: 1000px;
-    
-    
+.nav-link:hover{
+
+    color:var(--light);
+    border-bottom: 2px solid var(--light);
 }
 
-.libri{
-    min-height: 900px;
-    width: 300px;
-    
+.btn-outline-light{
+
+    border: 2px solid var(--pink);
+    transition:0.4s;
 }
 
-.schedeHome{
-    margin-top: 300px;
-}
+.btn-outline-light:hover{
 
-.articoli{
-    border: 2px solid;
-    background-color: var(--corallo);
-    border-color: var(--biancoAntico);
-    min-height: 100px;
-    width: 300px;
-    margin-bottom: 300px;
+    border: 2px solid var(--skyblue);
+    color:var(--light);
+    background-color: var(--salmon);
     
 }
 
-.articoli-title{
-    text-decoration: underline;
+.logoT{
+    width:120px;
+    filter: drop-shadow(5px 2px 2px #119abf);
 }
 
-.bottone-leggimi{
-    border-color: var(--corallo);
-    color: var(--corallo);
+.logoS{
+    width: 60px;
+    filter: drop-shadow(5px 2px 2px #119abf);
+
 }
 
-.bottone-leggimi:hover{
-    background-color: var(--corallo);
-    color: var(--biancoAntico);
+#logoCarrello, #logoShopper{
+    transition:0.4s;
+}
+
+#navIcon{
+    transition: 0.4s;
+}
+
+/* Section animated */
+.dress{
+    width:400px;
+}
+
+.increment-numbers{
+    color: var(--pink);
+    font-size: 100px;
+    
+}
+
+/* SWIPER */
+.swiper {
+    /* width: 600px;  */
+    /* > si prende così la larghezza */
+    height: 600px;
+  }
+
+.card-custom{
+    height: 400px;
+    width: 500px;
+    border: 2px solid var(--pink);
+    border-radius: 20%;
+    background-color: var(--pink);
+    color: var(--light);
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* MOUSE ENTER */
+.container-custom{
+
+    background-color: var(--lightBlue);
+    
+}
+
+.col-custom{
+    border:3px solid var(--skyblue);
+    font-size: 25px;
+    color:var(--skyblue);
+    
+
+    padding:20px;
+    transition: 0.4s;
+}
+
+.col-custom:hover{
+    background-color: var(--salmon);
+    color: var(--skyblue);
+    transform: scale(1.1);
 }
 
 
-.about{
-    border:2px solid;
-    background-color: var(--corallo);
-    border-color: var(--biancoAntico);
-    min-height: 100px;
-    width: 300px;
-    margin-bottom: 300px;
+.card-anchor{
+    text-decoration:none;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--skyblue);
 }
 
-.about-title{
-text-decoration: underline;
+.card-anchor:hover{
+
+    color: var(--lightBlue);
 }
 
-.just-marginTop{
-    margin-top: 250px;
+#cardWrapper{
+    margin-bottom: 100px;
 }
-
 
 /* footer */
 .footer{
-    background-color: var(--rosaLampone);
+    background-color: var(--lightBlue);
     height: 100px;
 
 }
@@ -169,40 +216,3 @@ text-decoration: underline;
     height: 30px;
     width: 30px;
 }
-
-/* SECONDA PAGINA (LIBRI) */
-.sezioneLibri{
-    background-color: var(--corallo);
-    height: 1000px;
-}
-
-/* Card pagina  */
-.schedaLibro{
-    margin: 100px;
-    padding-top: 100px;
-}
-
-.cardRecensione{
-    border: 2px solid;
-    background-color: var(--corallo);
-    border-color: var(--biancoAntico);
-    padding: 50px;
-    
-}
-
-.cardRecensione:hover{
-    border-color: var(--rosaLampone);
-}
-
-.bottoneLeggi{
-    border-color: var(--biancoAntico);
-    color: var(--biancoAntico);
-}
-
-.bottoneLeggi:hover{
-    border-color: var(--rosaLampone);
-    color: var(--rosaLampone);
-}
-
-
-

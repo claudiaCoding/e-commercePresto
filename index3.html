@@ -3,80 +3,99 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Clod's Books</title>
-    <link rel="shortcut icon" href="./media/logoLibri.png" type="image/x-icon">
+    <title>Presto.it</title>
+    <link rel="shortcut icon" href="./media/logoTitle.png" type="image/x-icon">
 
-    <!-- CDN AOS: -->
+    <!-- Link AOS CDN: -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+   
     <!-- CDN FontAwesome: -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- GOOGLE FONTS: -->
+    <!-- Google Fonts CDN: -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Ubuntu:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Lobster&display=swap" rel="stylesheet">
 
-    <!-- CSS BOOTSTRAP: -->
+    <!-- Link Bootstrap: -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
-    <!-- CSS CUSTOM: -->
+    <!-- Link CSS CUSTOM: -->
     <link rel="stylesheet" href="./style.css">
+
   </head>
 
   <body>
     
-<!-- NAVBAR: -->
-<nav class="navbar navbar-expand-lg fixed-top">
-
-    <div class="container-fluid">
-        <img class="books" src="./media/logoLibri.png" alt="">
-      <a class="navbar-brand title text-biancoAntico" href="#">Clod's Books</a>
-
-      <button id="bottone" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fa-solid fa-book fa-2x" id="closedBook"></i>
-        <i class="fa-solid fa-book-open fa-2x d-none" id="openBook"></i>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <!-- NAVBAR -->
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid">
         
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <a class="navbar-brand text-pink fs-1" href="#">
+          <img id="logoCarrello" class="img-fluid logoT" src="./media/logoTitle.png" alt="">
+          <img id="logoShopper" class="img-fluid logoS d-none" src="./media/logoShopper.png" alt=""></a>
 
-          <li class="nav-item">
-            <a class="nav-link text-biancoAntico fs-4" aria-current="page" href="./index.html">Home</a>
-          </li>
 
-          <li class="nav-item ">
-            <a class="nav-link text-biancoAntico fs-4" href="./index2.html">Libri</a>
-          </li>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-regular fa-hand-point-down fa-2x text-pink" id="navIcon"></i>
+        </button>
 
-          <li class="nav-item">
-            <a class="nav-link text-biancoAntico fs-4 pe-4" href="#">Contatti</a>
-          </li>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
-        </ul>
+            <li class="nav-item">
+              <a class="nav-link fs-3" aria-current="page" href="./index.html">Home</a>
+            </li>
 
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
-          <button class="btn-cerca btn btn-outline-light" type="submit">Cerca</button>
-        </form>
+            <li class="nav-item">
+              <a class="nav-link fs-3" href="./index2.html">Annunci</a>
+            </li>
 
+            <li class="nav-item">
+              <a class="nav-link fs-3" href="./index3.html">Chi siamo</a>
+            </li>
+
+          </ul>
+
+          <form class="d-flex fs-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Cerca Annunci" aria-label="Search">
+            <button class="btn btn-outline-light text-pink fs-3" type="submit">Cerca</button>
+          </form>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+
+  <!-- HEADER -->
+
+    <header class="container-fluid">
+      <!-- il container è fluid perché deve occupare tutto lo spazio da sinistra a destra -->
     
-<section class="sezioneLibri"></section>
+    <div class="row header vh-100 align-items-center ">
+      
+      <div class="col-12 text-center h-75">
+
+        <h1 class=" display-1 text-pink fw-bold" data-aos="zoom-out-up" data-aos-duration="1000"> Presto<span class="text-skyblue" data-aos="zoom-out-up" data-aos-duration="2000">.it</span> </h1>
+    
+        </div>
+    
+    
+    </div>
+
+<section class="vh-100">
+
+</section>
 
 
 
 
+ <!-- FOOTER: -->
 
   <footer class="footer d-flex flex-wrap justify-content-between align-items-center border-top">
 
     <div class="col-md-4 d-flex align-items-center">
   
       <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-        <img class="logoFooter ms-3" src="./media/logoLibri.png" alt="">
+        <img class="logoFooter ms-3" src="./media/logoShopper.png" alt="">
       </a>
   
       <span class="mb-3 ms-3 mb-md-0 text-body-secondary">© 2023 Company, Inc</span>
@@ -94,30 +113,29 @@
     </ul>
   
   </footer> 
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <!-- JS AOS: -->
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      
-      <!-- AOS: -->
-      <script>
-        AOS.init();
-      </script>
-  
-      <!-- JS BOOTSTRAP: -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-  
+
+
+    
+
+    <!-- JS AOS CDN: -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- SWIPER JS CDN: -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- JS Bootstrap: -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <!-- Inizialize AOS: -->
+    <script>
+      AOS.init();
+    </script>
+
       <!-- JS CUSTOM: -->
-      <script src="./main.js"></script>
-      
-    </body>
-  </html>
+  <script src="./main.js"></script>
+    
+ 
+
+    
+</body>
+</html>

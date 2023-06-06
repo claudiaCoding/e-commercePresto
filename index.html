@@ -3,208 +3,329 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Clod's Books</title>
-    <link rel="shortcut icon" href="./media/logoLibri.png" type="image/x-icon">
+    <title>Presto.it</title>
+    <link rel="shortcut icon" href="./media/logoTitle.png" type="image/x-icon">
 
-    <!-- CDN AOS: -->
+    <!-- Link AOS CDN: -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+   
+   
     <!-- CDN FontAwesome: -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- GOOGLE FONTS: -->
+    <!-- Google Fonts CDN: -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Ubuntu:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Lobster&display=swap" rel="stylesheet">
 
-    <!-- CSS BOOTSTRAP: -->
+
+     <!-- SWIPER CDN: -->
+     <linK rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+
+    <!-- Link Bootstrap: -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
-    <!-- CSS CUSTOM: -->
-    <link rel="stylesheet" href="./style.css">
-  </head>
+    
 
+    <!-- Link CSS CUSTOM: -->
+    <link rel="stylesheet" href="./style.css">
+
+
+  </head>
   <body>
     
-<!-- NAVBAR: -->
-<nav class="navbar navbar-expand-lg fixed-top">
-
-    <div class="container-fluid">
-        <img class="books" src="./media/logoLibri.png" alt="">
-      <a class="navbar-brand title text-biancoAntico" href="#">Clod's Books</a>
-
-      <button id="bottone" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fa-solid fa-book fa-2x" id="closedBook"></i>
-        <i class="fa-solid fa-book-open fa-2x d-none" id="openBook"></i>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <!-- NAVBAR -->
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid">
         
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <a class="navbar-brand text-pink fs-1" href="#">
+          <img id="logoCarrello" class="img-fluid logoT" src="./media/logoTitle.png" alt="">
+          <img id="logoShopper" class="img-fluid logoS d-none" src="./media/logoShopper.png" alt=""></a>
 
-          <li class="nav-item">
-            <a class="nav-link text-biancoAntico fs-4" aria-current="page" href="./index.html">Home</a>
-          </li>
 
-          <li class="nav-item ">
-            <a class="nav-link text-biancoAntico fs-4" href="./index2.html">Libri</a>
-          </li>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-regular fa-hand-point-down fa-2x text-pink" id="navIcon"></i>
+        </button>
 
-          <li class="nav-item">
-            <a class="nav-link text-biancoAntico fs-4 pe-4" href="./index3.html">Contatti</a>
-          </li>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
-        </ul>
+            <li class="nav-item">
+              <a class="nav-link fs-3" aria-current="page" href="./index.html">Home</a>
+            </li>
 
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
-          <button class="btn-cerca btn btn-outline-light" type="submit">Cerca</button>
-        </form>
+            <li class="nav-item">
+              <a class="nav-link fs-3" href="./index2.html">Annunci</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link fs-3" href="./index3.html">Chi siamo</a>
+            </li>
+
+          </ul>
+
+          <form class="d-flex fs-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Cerca Annunci" aria-label="Search">
+            <button class="btn btn-outline-light text-pink fs-3" type="submit">Cerca</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+  <!-- HEADER -->
+
+    <header class="container-fluid">
+      <!-- il container è fluid perché deve occupare tutto lo spazio da sinistra a destra -->
+    
+    <div class="row header vh-100 align-items-center ">
+      
+      <div class="col-12 text-center h-75">
+
+        <h1 class=" display-1 text-pink fw-bold" data-aos="zoom-out-up" data-aos-duration="1000"> Presto<span class="text-skyblue" data-aos="zoom-out-up" data-aos-duration="2000">.it</span> </h1>
+        <p class="fs-1 text-skyblue">Nuovi annunci <span class="text-pink">ogni giorno!</span></p>
+
+
+      <button class="btn btn-outline-light text-pink me-3 fs-3" data-aos="flip-up" data-aos-duration="1000"> Novità </button>
+      <button class="btn btn-outline-light text-pink ms-3 fs-3" data-aos="flip-down" data-aos-duration="1000"> Affari </button>
 
       </div>
-    </div>
-  </nav>
     
-<!-- HEADER: -->
-<header id="headerId" class="container-fluid header">
-
-    <div class="row  mt-5">
-
-        <div class="col-12 text-center mt-5">
-
-            <!-- <h1 class="titolo-custom display-1 fw-bold">Clod's books</h1> -->
-            <p class="citazione fs-3 text-biancoAntico ">"I libri sono specchi: ci permettono di vedere riflessa la nostra anima e di scoprire nuove prospettive." - Carlos Ruiz Zafón</p>
-        
-        </div>
-
+    
     </div>
+    
+  </header>
 
-  <!-- MOSAICO IMMAGINI -->
-  <div class="immagini_libri container container-large">
+  <!-- ANIMATE -->
 
-    <section class="row my-5">
+  <section class="container my-5">
+
+    <div class="row">
 
       <div class="col-12 col-md-6">
+        <img class="dress" src="./media/dress.png" data-aos="fade-right" data-aos-duration="2000" data-aos-easing="linear" alt="">
+      </div>
 
-        <div class="row">
 
-          <div class="col-6 pt-5">
-            <img class="img-fluid" width="100%" src="./media/harrypotter.jpg" alt="">
-          </div>
+      <div class="col-12 col-md-6 ">
+        
+        <h2 id="h2Test" class="text-center text-light display-3"> Un po' di numeri </h2>
 
-          <div class="col-6 pt-5">
-            <img class="img-fluid" width="100%" src="./media/cimeTempestose.jpg" alt="">
-          </div>
+        <p class="lead text-center fs-3 text-light"> <span id="first-span" class="increment-numbers d-block"> 0 </span> Clienti Soddisfatti </p>
 
-          <div class="col-12 py-3">
-            <img class="img-fluid" width="100%" src="./media/libri3.jpg" alt="">
-          </div>
+        <p class="lead text-center fs-3 text-light"> <span id="second-span" class="increment-numbers d-block"> 0 </span> Prodotti Venduti </p>
 
-        </div>
+        <p class="lead text-center fs-3 text-light"> <span id="third-span" class="increment-numbers d-block"> 0 </span> Recensioni </p>
 
       </div>
 
-      <div class="col-12 col-md-3 pt-5">
-        <img class="libri" src="./media/ioann-mark-kuznietsov-P6uqpNyXcI4-unsplash.jpg" alt="">
-      </div>
+    </div>
 
-      <div class="col-12 col-md-3 pt-5">
+  </section>
 
-        <div class="row">
 
-          <div class="col-12">
-            <img class="img-fluid" width="100%" src="./media/1984.jpg" alt="">
-          </div>
+  <!-- SWIPER: -->
 
-          <div class="col-12 py-4">
-            <img class="img-fluid" width="100%" src="./media/prideandprejudice.jpg" alt="">
-          </div>
+  <section class="container my-5 py-5">
 
-        </div>
+<div class="row justify-content-center">
+  
+<div class="col-12 col-md-8">
 
-      </div>
+<!-- Slider main container -->
+  <div class="swiper">
+
+<!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+
+<!-- Slides -->
 
       
-    </section>
+      </div>
+ 
+
+  <!-- If we need navigation buttons -->
+      <!-- <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> -->
+
+  <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
   </div>
 
-  
-  <!-- cards: -->
-    <div class="row schedeHome justify-content-evenly ">
 
-        <div class="col-12 col-md-6 articoli" data-aos="fade-right" data-aos-duration="2000" data-aos-easing="linear">
 
-            <h3 class="articoli-title text-center text-biancoAntico fs-1">Ultimi articoli</h3>
 
-            <div id="cardWrapper" class="card text-center bg-biancoAntico text-corallo mt-5">
+</div>
+</div>
 
-            </div>
+  </section>
+
+
+  <!-- MOUSE ENTER -->
+
+  <section class="container-fluid container-custom my-5 py-5">
+
+    <div class="container">
+      <div class="row text-light justify-content-between text-center">
+        <div class="col-12 col-md-3 col-custom my-5">
+
+          <i class="fa-solid fa-guitar fa-3x"></i>
+
+          <h3>CHITARRA</h3>
+
+          <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ad doloribus, porro autem, voluptatum quibusdam rem facilis assumenda, blanditiis necessitatibus officiis suscipit. Eius, accusamus quae alias aliquam corrupti totam delectus.</P>
 
         </div>
 
-        <div class="col-12 col-md-6 about" data-aos="fade-left" data-aos-duration="2000" data-aos-easing="linear">
+         <div class="col-12 col-md-3 col-custom my-5">
 
-            <h3 class="about-title text-center text-biancoAntico fs-1">About</h3>
-            <img class="img-fluid py-4" src="./media/imgAbout.jpg" alt="" >
-            <p class="text-biancoAntico text-center fs-5 py-3">Mi presento! Sono Claudia e mi definisco una lettrice appassionata! Adoro i libri e ho deciso di iniziare a tenere traccia delle mie letture condividendole con chiunque abbia voglia di seguire le mie avventure letterarie. Vi invito a dare un'occhiata in giro e prendervi qualche minuto per voi! Enjoy! </p>
+          <i class="fa-solid fa-guitar fa-3x"></i>
 
+          <h3>CHITARRA</h3>
+
+          <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ad doloribus, porro autem, voluptatum quibusdam rem facilis assumenda, blanditiis necessitatibus officiis suscipit. Eius, accusamus quae alias aliquam corrupti totam delectus.</P>
 
         </div>
+
+         <div class="col-12 col-md-3 col-custom my-5">
+
+          <i class="fa-solid fa-guitar fa-3x"></i>
+
+          <h3>CHITARRA</h3>
+
+          <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ad doloribus, porro autem, voluptatum quibusdam rem facilis assumenda, blanditiis necessitatibus officiis suscipit. Eius, accusamus quae alias aliquam corrupti totam delectus.</P>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+  </section>
+
+
+  <!-- CARD -->
+  <section class="container my-5">
+
+    <div class="row pt-5 text-center" id="cardWrapper">
 
 
     </div>
 
-</header>
+  </section>
+
+  <!-- FOOTER: -->
+
+  <footer class="footer d-flex flex-wrap justify-content-between align-items-center border-top">
+
+    <div class="col-md-4 d-flex align-items-center">
+  
+      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <img class="logoFooter ms-3" src="./media/logoShopper.png" alt="">
+      </a>
+  
+      <span class="mb-3 ms-3 mb-md-0 text-body-secondary">© 2023 Company, Inc</span>
+  
+    </div>
+  
+    <ul class="nav col-md-4 justify-content-end d-flex me-4">
+  
+      <li class="ms-3"><a class="text-violetto" href="#"><i class="fa-brands fa-facebook fa-2x"></i></a></li>
+  
+      <li class="ms-3"><a class="text-violetto" href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+  
+      <li class="ms-3"><a class="text-violetto" href="#"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
+  
+    </ul>
+  
+  </footer> 
 
 
     
-<footer class="footer d-flex flex-wrap justify-content-between align-items-center border-top">
 
-  <div class="col-md-4 d-flex align-items-center">
-
-    <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-      <img class="logoFooter ms-3" src="./media/logoLibri.png" alt="">
-    </a>
-
-    <span class="mb-3 ms-3 mb-md-0 text-body-secondary">© 2023 Company, Inc</span>
-
-  </div>
-
-  <ul class="nav col-md-4 justify-content-end d-flex me-4">
-
-    <li class="ms-3"><a class="text-violetto" href="#"><i class="fa-brands fa-facebook fa-2x"></i></a></li>
-
-    <li class="ms-3"><a class="text-violetto" href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
-
-    <li class="ms-3"><a class="text-violetto" href="#"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
-
-  </ul>
-
-</footer> 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <!-- JS AOS: -->
+    <!-- JS AOS CDN: -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-    <!-- AOS: -->
+
+    <!-- SWIPER JS CDN: -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- JS Bootstrap: -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <!-- Inizialize AOS: -->
     <script>
       AOS.init();
     </script>
 
-    <!-- JS BOOTSTRAP: -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
-    <!-- JS CUSTOM: -->
-    <script src="./main.js"></script>
+  <!-- inizializzazione Swiper: (la mettiamo nella pagina index se voglio che agisca solo lì, altrimenti nel documento di JS) -->
+<script>
+// SWIPER:
+let advices = [
+
+{ name: 'Claudia', quote : ' Ho fatto il mio primo acquisto e mi sono trovata molto bene. Prezzi ottimi!' },
+{ name: 'Massimo', quote :  'Trovo sempre ciò che mi serve e la spedizione è rapidissima!' },
+{ name: 'Sara', quote : 'I prodotti sono ottimi e il servizio clienti sempre presente per qualsiasi necessità!' },
+{ name: 'Marco', quote : 'Ottima merce a prezzi vantaggiosi!'}
+
+]
+
+let swiperWrapper= document.querySelector('.swiper-wrapper');
+
+advices.forEach ( (recensione) =>{
+
+let div = document.createElement('div');
+
+div.classList.add("swiper-slide", "d-flex", "align-items-center", "justify-content-center");
+
+div.innerHTML = ` 
+
+<div class="card-custom">
+
+<p class="h3 mb-4 fs-2"> ${recensione.name} </p>
+<p class="text-center fst-italic fs-3"> ${recensione.quote} </p>
+
+</div>   `;
+
+swiperWrapper.appendChild(div);
+
+})
+
+
+
+      const swiper = new Swiper('.swiper', {
+  // Optional parameters
+      // direction: 'vertical',
+      effect: "cube",
+      grabCursor: true,
+   
+      loop: true,
+
+  // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+  // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+  // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+</script>
+
+  <!-- JS CUSTOM: -->
+  <script src="./main.js"></script>
+    
+ 
+
     
   </body>
 </html>
