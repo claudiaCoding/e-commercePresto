@@ -1,0 +1,208 @@
+h1, h2, h3, .h1, .h2, .h3{
+
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* COLORS */
+:root{
+    --violetto: rgb(76, 36, 59);
+    --rosaLampone: rgb(184, 74, 98);
+    --biancoAntico: rgb(240, 231, 216);
+    --corallo: rgb(234, 158, 141);
+}
+
+.text-violetto{
+    color:var(--violetto);
+}
+
+.bg-violetto{
+    color:var(--violetto);
+}
+
+.text-rosaLampone{
+    color:var(--rosaLampone);
+}
+
+.bg-rosa-Lampone{
+    color:var(--rosaLampone);
+}
+
+.text-biancoAntico{
+    color:var(--biancoAntico);
+}
+
+.bg-biancoAntico{
+    color:var(--biancoAntico);
+}
+
+.text-corallo{
+    color: var(--corallo);
+}
+
+/* NAVBAR */
+.navbar{
+    background-color:var(--rosaLampone);
+    
+}
+
+.books{
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+}
+
+.title{
+    font-size: 50px;
+}
+
+.title:hover{
+    color: var(--violetto);
+}
+
+.nav-link:hover{
+    color:var(--violetto);
+}
+
+.btn-cerca{
+    border-color: var(--biancoAntico);
+}
+
+.btn-cerca:hover{
+    background-color: var(--violetto);
+    border-color: var(--violetto);
+    color: var(--rosaLampone);
+}
+
+/* HEADER */
+.header{
+
+    background-image: linear-gradient(rgba(184, 74, 98, 0.77), rgba(234, 158, 141, 0.77)), url(./media/libreria-background.jpg);
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+/* .titolo-custom{
+    color: var(--corallo);
+    margin-top: 50px;
+    
+} */
+.citazione{
+    margin-top: 200px;
+}
+
+.immagini_libri{
+    margin-top: 200px;
+    height: 1000px;
+    
+    
+}
+
+.libri{
+    min-height: 900px;
+    width: 300px;
+    
+}
+
+.schedeHome{
+    margin-top: 300px;
+}
+
+.articoli{
+    border: 2px solid;
+    background-color: var(--corallo);
+    border-color: var(--biancoAntico);
+    min-height: 100px;
+    width: 300px;
+    margin-bottom: 300px;
+    
+}
+
+.articoli-title{
+    text-decoration: underline;
+}
+
+.bottone-leggimi{
+    border-color: var(--corallo);
+    color: var(--corallo);
+}
+
+.bottone-leggimi:hover{
+    background-color: var(--corallo);
+    color: var(--biancoAntico);
+}
+
+
+.about{
+    border:2px solid;
+    background-color: var(--corallo);
+    border-color: var(--biancoAntico);
+    min-height: 100px;
+    width: 300px;
+    margin-bottom: 300px;
+}
+
+.about-title{
+text-decoration: underline;
+}
+
+.just-marginTop{
+    margin-top: 250px;
+}
+
+
+/* footer */
+.footer{
+    background-color: var(--rosaLampone);
+    height: 100px;
+
+}
+
+.logoFooter{
+    height: 30px;
+    width: 30px;
+}
+
+/* SECONDA PAGINA (LIBRI) */
+.sezioneLibri{
+    background-color: var(--corallo);
+    height: 1000px;
+}
+
+/* Card pagina  */
+.schedaLibro{
+    margin: 100px;
+    padding-top: 100px;
+}
+
+.cardRecensione{
+    border: 2px solid;
+    background-color: var(--corallo);
+    border-color: var(--biancoAntico);
+    padding: 50px;
+    
+}
+
+.cardRecensione:hover{
+    border-color: var(--rosaLampone);
+}
+
+.bottoneLeggi{
+    border-color: var(--biancoAntico);
+    color: var(--biancoAntico);
+}
+
+.bottoneLeggi:hover{
+    border-color: var(--rosaLampone);
+    color: var(--rosaLampone);
+}
+
+
+
